@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eltech - мобильное приложение Московского Политеха</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Eltech">
+        <span class="brand-mark">E</span>
+        <span>Eltech</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="about.html">О проекте</a>
+        <a href="members.html">Участники</a>
+        <a href="journal.html">Журнал</a>
+        <a href="resources.html">Ресурсы</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">Проектная деятельность</p>
+          <h1>Eltech</h1>
+          <p class="lead">Кроссплатформенное мобильное приложение для доступа к расписанию, LMS/Moodle и сервисам Московского Политеха со смартфона.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="about.html">Смотреть проект</a>
+            <a class="button secondary" href="journal.html">Ход работы</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/app-preview.svg" alt="Макет экранов мобильного приложения Eltech">
+        </figure>
+      </section>
+
+      <section class="section compact" aria-label="Ключевая информация">
+        <div class="stat">
+          <strong>KMP</strong>
+          <span>общая бизнес-логика для Android и iOS</span>
+        </div>
+        <div class="stat">
+          <strong>27</strong>
+          <span>участников в проектной команде</span>
+        </div>
+        <div class="stat">
+          <strong>5</strong>
+          <span>зафиксированных этапов разработки</span>
+        </div>
+      </section>
+
+      <section class="section split" id="about">
+        <div>
+          <p class="eyebrow">О проекте</p>
+          <h2>Мобильный доступ к цифровой среде университета</h2>
+          <p>Eltech решает проблему неудобного использования университетских веб-сервисов на смартфонах. Приложение объединяет повседневные сценарии студента: расписание, учебные материалы, авторизацию и элементы личного кабинета.</p>
+          <p>Цель проекта - создать полноценный мобильный клиент Московского Политеха с понятным интерфейсом и архитектурой, готовой к развитию.</p>
+        </div>
+        <div class="panel">
+          <h3>Основные задачи</h3>
+          <ul class="checklist">
+            <li>Перенос функций личного кабинета в мобильный формат.</li>
+            <li>Разработка SDK на Kotlin Multiplatform.</li>
+            <li>Интеграция с расписанием и LMS/Moodle.</li>
+            <li>Создание интерфейса в стиле Московского Политеха.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Архитектура</p>
+        <h2>Слои приложения</h2>
+        <img class="wide-visual" src="assets/architecture.svg" alt="Схема архитектуры Eltech">
+      </section>
+
+      <section class="section" id="members">
+        <p class="eyebrow">Участники</p>
+        <h2>Команда и личный вклад</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Участник</th>
+                <th>Задачи</th>
+                <th>Часы</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Клепиков Станислав</td><td>Руководитель проекта</td><td>50</td></tr>
+              <tr><td>Воронин Даниил</td><td>SDK_Eltech, документация SDK</td><td>45</td></tr>
+              <tr><td>Смирнов Ярослав</td><td>SDK_Eltech</td><td>42</td></tr>
+              <tr><td>Алешин Станислав</td><td>Cache</td><td>38</td></tr>
+              <tr><td>Ермаков Дмитрий</td><td>Экран расписания</td><td>38</td></tr>
+              <tr><td>Сарафанов Алексей</td><td>Экран расписания</td><td>37</td></tr>
+              <tr><td>Фролов Алексий</td><td>Domain</td><td>36</td></tr>
+              <tr><td>Жигунов Дамир</td><td>Экран расписания</td><td>36</td></tr>
+              <tr><td>Фролков Даниил</td><td>Экран расписания</td><td>35</td></tr>
+              <tr><td>Агеев Олег</td><td>Domain</td><td>35</td></tr>
+              <tr><td>Максимов Дмитрий</td><td>Domain</td><td>34</td></tr>
+              <tr><td>Шерешев Роман</td><td>Domain</td><td>34</td></tr>
+              <tr><td>Гордеев Игорь</td><td>UI</td><td>34</td></tr>
+              <tr><td>Станкевич Михаил</td><td>Domain</td><td>33</td></tr>
+              <tr><td>Евдакимов Артем</td><td>Экран входа и авторизация</td><td>33</td></tr>
+              <tr><td>Тимофеев Михаил</td><td>Экран входа и авторизация</td><td>32</td></tr>
+              <tr><td>Горячев Владислав</td><td>Cache</td><td>32</td></tr>
+              <tr><td>Карпов Александр</td><td>Экран физической культуры</td><td>31</td></tr>
+              <tr><td>Овчаренко Александр</td><td>Cache</td><td>30</td></tr>
+              <tr><td>Карева Елена</td><td>UI</td><td>29</td></tr>
+              <tr><td>Акимова Ангелина</td><td>UI</td><td>28</td></tr>
+              <tr><td>Солодовников Захар</td><td>UI</td><td>28</td></tr>
+              <tr><td>Верховец Алина</td><td>UI</td><td>27</td></tr>
+              <tr><td>Андреев Иван</td><td>UI</td><td>26</td></tr>
+              <tr><td>Гутников Владимир</td><td>UI</td><td>25</td></tr>
+              <tr><td>Савинова Ярослава</td><td>Документация</td><td>24</td></tr>
+              <tr><td>Азнаурьян Игорь</td><td>Документация</td><td>22</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="journal">
+        <p class="eyebrow">Журнал</p>
+        <h2>Ход разработки</h2>
+        <div class="timeline">
+          <article>
+            <time datetime="2026-03-01">01.03.2026</time>
+            <h3>Старт разработки SDK</h3>
+            <p>Начата работа над SDK_Eltech для взаимодействия с внутренними API университета. Подготовлено описание методов, запросов и ответов.</p>
+          </article>
+          <article>
+            <time datetime="2026-03-15">15.03.2026</time>
+            <h3>Экран физической культуры</h3>
+            <p>Добавлен экран отслеживания прогресса по физкультуре: баллы, посещения и данные из личного кабинета.</p>
+          </article>
+          <article>
+            <time datetime="2026-03-26">26.03.2026</time>
+            <h3>Интеграция с LMS</h3>
+            <p>Реализован базовый функционал взаимодействия с Moodle, парсинг учебных материалов и интеграция пользовательских сессий.</p>
+          </article>
+          <article>
+            <time datetime="2026-04-15">15.04.2026</time>
+            <h3>Доменный слой</h3>
+            <p>Описаны бизнес-сущности и сценарии использования, логика приложения отделена от инфраструктурных деталей.</p>
+          </article>
+          <article>
+            <time datetime="2026-04-22">22.04.2026</time>
+            <h3>Экран расписания</h3>
+            <p>Создана базовая верстка расписания, карточки занятий и переключение между датами.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="resources">
+        <p class="eyebrow">Ресурсы</p>
+        <h2>Полезные ссылки</h2>
+        <div class="links-grid">
+          <a href="https://mospolytech.ru/">Московский Политех</a>
+          <a href="https://mospolytech.ru/obuchenie/fakultety-i-instituty/fakultet-it/">Факультет ИТ</a>
+          <a href="https://kotlinlang.org/docs/multiplatform.html">Kotlin Multiplatform</a>
+          <a href="https://www.jetbrains.com/kotlin-multiplatform/">JetBrains KMP</a>
+          <a href="https://www.jetbrains.com/lp/compose-multiplatform/">Compose Multiplatform</a>
+          <a href="https://developer.android.com/">Android Developers</a>
+          <a href="https://m3.material.io/">Material Design 3</a>
+          <a href="https://habr.com/ru/hub/mobile_dev/">Habr: мобильная разработка</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Eltech - проект по дисциплине «Проектная деятельность».</p>
+    </footer>
+  </body>
+</html>
