@@ -27,6 +27,9 @@
 * [Участники](docs/members.md)
 * [Журнал прогресса](docs/journal.md)
 * [Полезные ресурсы](docs/resources.md)
+* [Отчёт по онлайн-курсам LLM](docs/llm_report.md)
+* [Отчёт о взаимодействии с партнёром](docs/partner_report.md)
+* [Техническое руководство по вариативной части](docs/variant_guide.md)
 
 ## Сайт
 

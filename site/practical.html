@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Практика 2.2 - Eltech</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Eltech"><span class="brand-mark">E</span><span>Eltech</span></a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="members.html">Участники</a>
+        <a href="journal.html">Журнал</a>
+        <a href="resources.html">Ресурсы</a>
+        <a href="practical.html">Практика 2.2</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero compact-hero">
+        <div class="hero-text">
+          <p class="eyebrow">Часть 2.2</p>
+          <h1 class="page-heading">Экран физической культуры</h1>
+          <p class="lead">Практическая реализация фрагмента мобильного приложения Eltech на Kotlin/Compose: экран физкультуры, журнал группы и переход из раздела сервисов.</p>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/app-preview.svg" alt="Макет экранов мобильного приложения Eltech">
+        </figure>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Назначение</p>
+          <h2>Что реализовано</h2>
+          <p>Вариативная часть связана с личным вкладом в проект Eltech. Реализован интерфейсный фрагмент, который помогает студенту просматривать информацию по физической культуре: посещения, баллы, LMS и журнал группы.</p>
+          <p>Решение отличается от примера с HTTP-сервером: здесь выполнена работа с Kotlin Multiplatform и Compose Multiplatform, то есть с технологией, близкой к основному проекту.</p>
+        </div>
+        <div class="panel">
+          <h3>Файлы в src</h3>
+          <ul class="checklist">
+            <li><strong>PhysicalScreen.kt</strong> - основной экран физической культуры.</li>
+            <li><strong>GroupJournalScreen.kt</strong> - экран журнала группы.</li>
+            <li><strong>HomeScreen.kt</strong> - переход к экрану из раздела сервисов.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Архитектура</p>
+        <h2>Связь экранов</h2>
+        <div class="code-diagram">
+          <pre><code>HomeScreen
+  └── сервис "Физическая культура"
+        └── PhysicalScreen
+              ├── HeaderBlock
+              ├── JournalCard
+              ├── Tabs
+              ├── VisitCard
+              └── GroupJournalScreen</code></pre>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">PhysicalScreen.kt</p>
+          <h2>Основной экран</h2>
+          <p>Экран содержит карточку студента, данные по курсу и группе здоровья, блоки «ЛМС» и «Всего», список посещений и вкладки для переключения между разделами.</p>
+        </div>
+        <div class="panel">
+          <h3>Ключевые элементы</h3>
+          <ul class="checklist">
+            <li>состояние выбранной вкладки;</li>
+            <li>открытие журнала группы;</li>
+            <li>карточки посещений;</li>
+            <li>placeholder для разделов без данных.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Фрагмент кода</p>
+        <h2>Переход к экрану</h2>
+        <div class="code-diagram">
+          <pre><code>serviceItem(
+    "Физическая культура",
+    "Посещаемость и Оценка",
+    Color(0xFFF5C6D6),
+    Icons.Default.FitnessCenter
+) {
+    openPhys = true
+}</code></pre>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Результат</p>
+          <h2>Практическая ценность</h2>
+          <p>Реализация показывает, как отдельный сервис университета может быть встроен в мобильное приложение. Экран физической культуры является частью повседневного сценария студента и дополняет общую цифровую среду Eltech.</p>
+        </div>
+        <div class="panel">
+          <h3>Документация</h3>
+          <ul class="checklist">
+            <li>docs/variant_guide.md</li>
+            <li>src/README.md</li>
+            <li>reports/practice_report.docx</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Eltech - проект по дисциплине «Проектная деятельность».</p>
+    </footer>
+  </body>
+</html>

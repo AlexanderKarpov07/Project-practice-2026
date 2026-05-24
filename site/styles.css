@@ -94,6 +94,10 @@ a {
     linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
 }
 
+.hero.compact-hero {
+  min-height: auto;
+}
+
 .hero-text {
   max-width: 680px;
 }
@@ -184,6 +188,27 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.code-diagram {
+  overflow-x: auto;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #101828;
+  box-shadow: var(--shadow);
+}
+
+.code-diagram pre {
+  margin: 0;
+}
+
+.code-diagram code {
+  color: #f8fafc;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre;
 }
 
 .section {
