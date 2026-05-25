@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eltech - мобильное приложение Московского Политеха</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="topbar">
@@ -33,7 +33,7 @@
           </div>
         </div>
         <figure class="hero-media">
-          <img src="assets/app-preview.svg" alt="Макет экранов мобильного приложения Eltech">
+          <img src="img/app-preview.svg" alt="Макет экранов мобильного приложения Eltech">
         </figure>
       </section>
 
@@ -73,7 +73,7 @@
       <section class="section">
         <p class="eyebrow">Архитектура</p>
         <h2>Слои приложения</h2>
-        <img class="wide-visual" src="assets/architecture.svg" alt="Схема архитектуры Eltech">
+        <img class="wide-visual" src="img/architecture.svg" alt="Схема архитектуры Eltech">
       </section>
 
       <section class="section" id="members">
@@ -171,15 +171,15 @@
       <section class="section split">
         <div>
           <p class="eyebrow">Практика 2.2</p>
-          <h2>Экран физической культуры</h2>
-          <p>В вариативной части реализован фрагмент мобильного приложения Eltech на Kotlin/Compose: экран физической культуры, журнал группы и переход из главного экрана сервисов.</p>
+          <h2>HTTP-сервер с нуля</h2>
+          <p>В вариативной части реализован простой HTTP-сервер на Python без фреймворков. Он отдаёт HTML-страницу о проекте Eltech, JSON со статусом проекта и статические SVG-материалы.</p>
         </div>
         <div class="panel">
           <h3>Исходники</h3>
           <ul class="checklist">
-            <li>PhysicalScreen.kt</li>
-            <li>GroupJournalScreen.kt</li>
-            <li>HomeScreen.kt</li>
+            <li>handle_request.py</li>
+            <li>ручная маршрутизация HTTP-запросов</li>
+            <li>JSON-эндпоинт для статуса проекта</li>
           </ul>
           <a class="button secondary" href="practical.html">Открыть раздел</a>
         </div>
